@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    -
+    <listeners>
+
+        <listener class-name="Listeners"/>
+
+    </listeners>
+
+    <test name="Example">
+        <groups>
+            <run>
+                <include name = "Regression" />
+            </run>
+        </groups>
+
+        -
+        <classes>
+
+            <class name="MouseHoverTest"/>
+
+            <class name="UploadTest"/>
+
+            <class name="ExitIntentTest"/>
+
+            <class name="AddRemoveElementsTest"></class>
+
+
+        </classes>
+
+    </test>
+
+</suite>
